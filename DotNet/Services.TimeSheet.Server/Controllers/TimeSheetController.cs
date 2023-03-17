@@ -14,13 +14,13 @@ namespace Services.TimeSheet.Server.Controllers
       }
 
       [HttpGet]
-      [Route("{accountId}")]
+      [Route("{timesheetId}")]
       [ProducesResponseType(StatusCodes.Status200OK)]
       [ProducesResponseType(StatusCodes.Status204NoContent)]
       [ProducesResponseType(StatusCodes.Status400BadRequest)]
       public async Task<IActionResult> Get()
       {
-         
+         return Ok();
       }
    }
 }
